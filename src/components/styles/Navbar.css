@@ -1,0 +1,12 @@
+.NavbarContainer{
+ background-color: cadetblue;
+ margin: 0;
+ height: 70px;
+ display: flex;
+ align-items: center;
+}
+
+.NavbarTitle{
+    margin-left: 10px;
+    color: white;
+}

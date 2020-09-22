@@ -1,0 +1,15 @@
+.Container{
+box-sizing: border-box;
+border: 1px solid gainsboro;
+border-radius: 5px;
+padding-left: 15px;
+display: flex;
+flex-direction: column;
+width: 200px;
+height: 290px;
+margin: 20px;
+}
+
+.BoxTitle{
+color: cadetblue;
+}
