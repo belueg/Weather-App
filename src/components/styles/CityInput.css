@@ -1,0 +1,19 @@
+.InputContainer{
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.InputBar{
+    margin-right: 10px;
+    width: 30%;
+}
+
+.InputBtn{
+background-color: cadetblue;
+color: white;
+font-weight: bolder;
+border: none;
+border-radius: 5px;
+padding: 5px;
+}

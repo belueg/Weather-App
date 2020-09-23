@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import WeatherBox from '../components/WeatherBox'
-import CityName from '../components/CityName'
+import CityInput from '../components/CityInput'
 import './styles/Weather.css'
 import Footer from '../components/Footer'
 
@@ -10,16 +10,15 @@ export default function WeatherPage () {
   const [weatherInfo, setWeatherInfo] = useState()
 const [temp, setTemp] = useState()
   useEffect(() => {
-    myRequest()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    myRequest("barcelona")
   }, [])
-  async function myRequest() {
+  async function myRequest(city) {
     try {
       const response = await fetch(
-        'https://api.openweathermap.org/data/2.5/weather?q=barcelona&appid=a2f2f00a939d548cbbfedacf0ae786a3'
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=256032c170e8af8e53f6ee4ecaa58a08
+        `
       )
       const data = await response.json()
-      console.log(data);
       const weatherData = data.weather[0]
       setCity(data.name)
       setWeatherInfo(weatherData)
@@ -32,7 +31,7 @@ const [temp, setTemp] = useState()
   return (
     <>
       <Navbar />
-      <CityName name="Barcelona" />
+      <CityInput name="Barcelona" request={myRequest} />
       <div className="ContainerBoxes">
         <WeatherBox
           city={city}
