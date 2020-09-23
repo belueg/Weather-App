@@ -1,5 +1,5 @@
 import React from 'react';
-import FiveDaysWeather from './pages/FiveDaysWeather'
+import FiveDaysWeather from './pages/Weather'
 function App() {
   return (
     <>
