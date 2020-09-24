@@ -1,0 +1,16 @@
+.ImageStyles{
+    position:absolute;
+    width: 300px;
+    left: 50px;
+    bottom:50px;
+    border-radius: 100%;
+
+}
+
+
+@media screen and (max-width: 415px) {
+
+    .ImageStyles{
+    display: none;
+    }
+}

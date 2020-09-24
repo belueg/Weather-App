@@ -9,11 +9,14 @@ export default function WeatherBox(props) {
         <div style={{ fontSize: '50px' }}>
           <img src={props.icon} alt="Weather Icon" />
         </div>
-        <p>{props.temperature}ºC </p>
-        <span>Max {props.max}ºC </span>
-        <span>Min {props.min}ºC </span>
+        <p className="TempNumber">{props.temperature}ºC </p>
+        <div>
+        <span className="MinMax">Max {props.max}ºC </span>
+        <span className="MinMax">Min {props.min}ºC </span>
+        </div>
+  
     
-        <span>{props.description}</span>
+        <span className="DescriptionBox">{props.description}</span>
       </div>
     </>
   )

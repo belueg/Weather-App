@@ -1,5 +1,4 @@
 .InputContainer{
-    width: 100%;
     text-align: center;
     margin: 20px;
 }
@@ -10,10 +9,14 @@
 }
 
 .InputBtn{
-background-color: cadetblue;
+background-color: #CF4327;
 color: white;
 font-weight: bolder;
 border: none;
 border-radius: 5px;
 padding: 5px;
+}
+
+.InputBtn:focus {
+    outline: none;
 }

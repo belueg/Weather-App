@@ -4,6 +4,7 @@ import WeatherBox from '../components/WeatherBox'
 import CityInput from '../components/CityInput'
 import './styles/Weather.css'
 import Footer from '../components/Footer'
+import ImageDecoration from '../components/ImageDecoration'
 
 export default function WeatherPage () {
     const[city, setCity] =useState("")
@@ -41,6 +42,7 @@ const [temp, setTemp] = useState()
           icon={`http://openweathermap.org/img/w/${weatherInfo?.icon}.png`}
           description={weatherInfo?.description}
         />
+        <ImageDecoration/>
       </div>
       <Footer />
     </>

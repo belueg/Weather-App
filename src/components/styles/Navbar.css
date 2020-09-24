@@ -1,9 +1,12 @@
 .NavbarContainer{
- background-color: cadetblue;
+ background-color: #CF4327;
  margin: 0;
  height: 70px;
  display: flex;
  align-items: center;
+ width: 100%;
+ position: relative;
+
 }
 
 .NavbarTitle{
